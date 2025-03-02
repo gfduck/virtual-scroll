@@ -10,13 +10,3 @@ const scroller = new VirtualScrollHandler({
   scroller.update();
   console.log(scroller.completion);
 })();
-
-// Añadir listener para depurar eventos
-const scrollbar = document.querySelector(".vsh-scrollbar");
-if (scrollbar) {
-  scrollbar.addEventListener("mousedown", (e) => {
-    console.log("Mouse down en la barra", e);
-  });
-} else {
-  console.error("La barra de desplazamiento no se encontró en el DOM");
-}
